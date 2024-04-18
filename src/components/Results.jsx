@@ -1,9 +1,16 @@
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
-const Results = ({results}) => {
+const Results = ({ results }) => {
   return (
-    <div>Results</div>
-  )
-}
+    <div>
+      {results.map((result) => (
+        <div key={result.id}>
+          <h2>{result.original_title}</h2>
+        </div>
+      ))}
+    </div>
+  );
+};
 
-export default Results
+export default Results;
