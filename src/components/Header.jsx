@@ -1,6 +1,9 @@
 import React from "react";
 import DarkModeSwitch from "./DarkModeSwitch";
 import Link from "next/link";
+import MenuItem from "./MenuItem";
+import { AiFillHome } from "react-icons/ai";
+import { BsFillInfoCircleFill } from "react-icons/bs";
 import NavbarItem from "./NavbarItem";
 
 const Header = () => {
@@ -15,10 +18,14 @@ const Header = () => {
           
         </Link>
       </div>
-      <div className="flex gap-4">
-      <NavbarItem title="Trending" param="fetchTrending" />
-      <NavbarItem title="Top Rated" param="fetchTopRated" />
+     
+      <div className='flex gap-4'>
+        {/* <MenuItem title='home' address='/' Icon={AiFillHome} />
+        <MenuItem title='about' address='/about' Icon={BsFillInfoCircleFill} /> */}
+         <NavbarItem title='Trending' param='fetchTrending' />
+      <NavbarItem title='Top Rated' param='fetchTopRated' />
       </div>
+     
       <div className="flex gap-4">
       <DarkModeSwitch />
       </div>
