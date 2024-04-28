@@ -3,7 +3,7 @@ import React from 'react'
 const API_KEY = process.env.NEXT_APP_API_KEY;
 const MoviePage = async({params}) => {
   const movieId = params.id
-  console.log(movieId)
+
   const res = await fetch(
     `https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}&language=en-US`,
     { next: { revalidate: 1000} }
