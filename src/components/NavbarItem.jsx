@@ -1,3 +1,5 @@
+
+"use client"
 import Link from "next/link";
 import { Suspense } from "react"; // Import Suspense
 import { useSearchParams } from "next/navigation";
