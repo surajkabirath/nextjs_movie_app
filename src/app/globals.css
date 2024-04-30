@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.absolute {
+    pointer-events: none;
+  }
+  
+  .gradient-box:hover {
+    opacity: 1;
+  }
+  
